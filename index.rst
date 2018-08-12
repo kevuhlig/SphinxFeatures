@@ -1,0 +1,39 @@
+.. Sphinx Features documentation master file, created by
+   sphinx-quickstart on Thu Aug  9 17:41:04 2018.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to Sphinx Features's documentation!
+===========================================
+
+.. contents:: TOC to Sections Below (i.e., Local TOC)
+   :local:
+   :depth: 3
+   :backlinks: top
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Links:
+
+   External Links
+   Internal Links
+   Link to Section on Other Page
+   Link to Other Page
+
+
+.. toctree::
+   :maxdepth: 4
+   :name: OtherTOC
+   :caption: Other Topics
+
+   Escape Character
+   Numbered Lists
+   Admonitions
+   Footnotes
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
