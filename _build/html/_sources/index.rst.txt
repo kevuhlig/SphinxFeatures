@@ -16,7 +16,7 @@ Welcome to Sphinx Features's documentation!
    :caption: Links:
 
    External Links
-   Internal Links
+   Internal Links within Same Page
    Link to Section on Other Page
    Link to Other Page
 
@@ -26,10 +26,26 @@ Welcome to Sphinx Features's documentation!
    :name: OtherTOC
    :caption: Other Topics
 
+
    Escape Character
-   Numbered Lists
+   DumpPage Chapter
    Admonitions
+   Forcing a Line Break
    Footnotes
+   Numbered Lists
+   Code Snippets
+   Substitution Text
+   Images
+   Figures
+   Section Example
+   Raw Directive
+   StylingSingleWord
+   Markup_Text
+   Tables
+   Sidebar
+   Topic
+   Download
+ 
 
 Indices and tables
 ==================

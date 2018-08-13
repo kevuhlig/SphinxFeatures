@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search &mdash; Sphinx Features 1.0 documentation</title>
+  <title>Raw Directive &mdash; Sphinx Features 1.0 documentation</title>
   
 
   
@@ -27,7 +27,8 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Section Example Title" href="Section Example.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -59,7 +60,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -84,7 +85,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Link to Other Page.html">Link to Other Page</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Other Topics</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Escape Character.html">Escape Character\</a></li>
 <li class="toctree-l1"><a class="reference internal" href="DumpPage Chapter.html">DumpPage Chapter</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Admonitions.html">Admonitions</a></li>
@@ -96,13 +97,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Images.html">Images</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Figures.html">Figures (i.e., Images with Captions)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Section Example.html">Section Example Title</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Raw Directive.html">Raw Directive</a></li>
-<li class="toctree-l1"><a class="reference internal" href="StylingSingleWord.html">Styling a Single Word</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Markup_Text.html">Marking Up Text</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tables.html">Tables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Sidebar.html">Sidebar</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Topic.html">Topic</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Download.html">Download</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Raw Directive</a></li>
 </ul>
 
             
@@ -148,12 +143,14 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Search</li>
+      <li>Raw Directive</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
+            <a href="_sources/Raw Directive.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -165,24 +162,39 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="raw-directive">
+<h1>Raw Directive<a class="headerlink" href="#raw-directive" title="Permalink to this headline">¶</a></h1>
+<p>The “raw” directive allows reST text to be bypassed. The example below is the HTML code to open an external link in a separate window:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="n">You</span> <span class="n">can</span> <span class="o">|</span><span class="n">green</span><span class="o">|.</span>
 
-  
-  <div id="search-results">
-  
-  </div>
+ <span class="o">..</span> <span class="o">|</span><span class="n">green</span><span class="o">|</span> <span class="n">raw</span><span class="p">::</span> <span class="n">html</span>
+
+ <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;http://geoiptool.com&quot;</span> <span class="n">target</span><span class="o">=</span><span class="s2">&quot;_blank&quot;</span><span class="o">&gt;</span><span class="n">check</span> <span class="n">your</span> <span class="n">location</span> <span class="n">here</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;.</span>
+
+<span class="n">turns</span> <span class="n">into</span> <span class="n">this</span><span class="p">:</span>
+
+<span class="n">You</span> <span class="n">can</span> <span class="o">|</span><span class="n">green</span><span class="o">|.</span>
+
+<span class="o">..</span> <span class="o">|</span><span class="n">green</span><span class="o">|</span> <span class="n">raw</span><span class="p">::</span> <span class="n">html</span>
+
+ <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;http://geoiptool.com&quot;</span> <span class="n">target</span><span class="o">=</span><span class="s2">&quot;_blank&quot;</span><span class="o">&gt;</span><span class="n">check</span> <span class="n">your</span> <span class="n">location</span> <span class="n">here</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;.</span>
+</pre></div>
+</div>
+<p>But you shouldn’t overuse or abuse this directive because it’s a potential security hole or something. <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives/html#raw-data-pass-through">Click here</a> for more info.</p>
+</div>
+
 
            </div>
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="Section Example.html" class="btn btn-neutral" title="Section Example Title" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -222,7 +234,6 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="_static/searchtools.js"></script>
 
   
 
@@ -232,14 +243,7 @@
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
-   
-
+  </script> 
 
 </body>
 </html>

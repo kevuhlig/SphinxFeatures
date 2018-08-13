@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search &mdash; Sphinx Features 1.0 documentation</title>
+  <title>Images &mdash; Sphinx Features 1.0 documentation</title>
   
 
   
@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" /> 
+    <link rel="search" title="Search" href="search.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -59,7 +59,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -93,16 +93,6 @@
 <li class="toctree-l1"><a class="reference internal" href="Numbered Lists.html">Numbered and Bulleted Lists</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Code Snippets.html">Code Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Substitution Text.html">Substitution Text</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Images.html">Images</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Figures.html">Figures (i.e., Images with Captions)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Section Example.html">Section Example Title</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Raw Directive.html">Raw Directive</a></li>
-<li class="toctree-l1"><a class="reference internal" href="StylingSingleWord.html">Styling a Single Word</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Markup_Text.html">Marking Up Text</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tables.html">Tables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Sidebar.html">Sidebar</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Topic.html">Topic</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Download.html">Download</a></li>
 </ul>
 
             
@@ -148,12 +138,14 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Search</li>
+      <li>Images</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
+            <a href="_sources/Images.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -165,19 +157,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="images">
+<h1>Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="regular-images">
+<h2>Regular Images<a class="headerlink" href="#regular-images" title="Permalink to this headline">¶</a></h2>
+<p>Case veritus electram an pri, te modus tacimates volutpat usu, zril audiam ad qui. At ubique essent nec. Altera vituperata his ea, malis ocurreret ad vim. Eu ius patrioque gloriatur comprehensam, homero platonem ne nam. Timeam accumsan no nec, ei cum illud nostro laoreet, unum complectitur ad vis.</p>
+<p>Note that with images, the image file must be relative to the source file.</p>
+<img alt="_images/compmanagement1.png" src="_images/compmanagement1.png" />
+<img alt="_images/properties1.png" src="_images/properties1.png" />
+</div>
+<div class="section" id="image-that-is-also-an-external-link">
+<h2>Image that is also an External Link<a class="headerlink" href="#image-that-is-also-an-external-link" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="code docutils literal notranslate"><span class="pre">image</span></code> directive has the option <code class="code docutils literal notranslate"><span class="pre">target</span></code>. Click the cloud below to see where you go.</p>
+<a class="reference external image-reference" href="https://www.thestar.com/"><img alt="_images/cloud.png" src="_images/cloud.png" /></a>
+<p>Here is another method using substitution text:</p>
+<p>The <a class="reference external" href="http://docutils.sourceforge.net/rst.html"><img alt="biohazard" src="_images/biohazard.png" /></a> symbol must be used on containers used to dispose of medical waste.</p>
+</div>
+<div class="section" id="image-that-is-also-an-internal-link-to-other-page">
+<h2>Image that is also an Internal Link to Other Page<a class="headerlink" href="#image-that-is-also-an-internal-link-to-other-page" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference external" href="Admonitions.html"><img alt="biohazard1" src="_images/biohazard2.png" /></a> symbol must be used on containers used to dispose of medical waste.</p>
+</div>
+</div>
 
-  
-  <div id="search-results">
-  
-  </div>
 
            </div>
            
@@ -222,7 +223,6 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="_static/searchtools.js"></script>
 
   
 
@@ -232,14 +232,7 @@
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
-   
-
+  </script> 
 
 </body>
 </html>
