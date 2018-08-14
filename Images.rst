@@ -10,7 +10,7 @@ Case veritus electram an pri, te modus tacimates volutpat usu, zril audiam ad qu
  
 Note that with images, the image file must be relative to the source file. 
  
-.. image:: images/compmanagement1.png
+.. image:: images/CompManagement1.png
  
 .. image:: images/properties1.png
  
