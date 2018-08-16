@@ -26,8 +26,6 @@ sectionred88_ to access line 88 of Section Red.
  
 This link is to content that I made into a target: See `quo falli`_. 
  
-This link is to the TOC that I made into target by giving it the name LinkToc: 
- 
  
 .. _sectionblue:
  

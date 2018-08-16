@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Substitution Text" href="Substitution Text.html" />
     <link rel="prev" title="Numbered and Bulleted Lists" href="Numbered Lists.html" /> 
 
   
@@ -101,6 +102,17 @@
 <li class="toctree-l2"><a class="reference internal" href="#using-two-single-left-quotes-on-each-side">Using two single left quotes on each side</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="Substitution Text.html">Substitution Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Images.html">Images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Figures.html">Figures (i.e., Images with Captions)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Section Example.html">Section Example Title</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Raw Directive.html">Raw Directive</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StylingSingleWord.html">Styling a Single Word</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Markup_Text.html">Marking Up Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tables.html">Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sidebar.html">Sidebar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topic.html">Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Download.html">Download</a></li>
 </ul>
 
             
@@ -240,44 +252,20 @@
 <div class="section" id="the-literalinclude-directive">
 <h2>The <code class="docutils literal notranslate"><span class="pre">Literalinclude</span></code> Directive<a class="headerlink" href="#the-literalinclude-directive" title="Permalink to this headline">¶</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">Literalinclude</span></code> directive allows you to point to a file so that you don’t have a bunch of code filling up your .rst page. As with images and downloadable files, the target file is relative to the source document file.</p>
-<p><strong>Example Request</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">api</span><span class="o">.</span><span class="n">goshippo</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">addresses</span><span class="o">/</span> 
-    <span class="o">-</span><span class="n">H</span> <span class="s2">&quot;Authorization: ShippoToken &lt;API_TOKEN&gt;&quot;</span> \
-    <span class="o">-</span><span class="n">H</span> <span class="s2">&quot;Content-Type: application/json&quot;</span>
-    <span class="o">-</span><span class="n">d</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Shawn Ippotle&quot;</span> \
-    <span class="o">-</span><span class="n">d</span> <span class="n">company</span><span class="o">=</span><span class="s2">&quot;Shippo&quot;</span> \
-    <span class="o">-</span><span class="n">d</span> <span class="n">street1</span><span class="o">=</span><span class="s2">&quot;215 Clayton St.&quot;</span> \
-    <span class="o">-</span><span class="n">d</span> <span class="n">street2</span><span class="o">=</span><span class="s2">&quot;&quot;</span> \
-    <span class="o">-</span><span class="n">d</span> <span class="n">city</span><span class="o">=</span><span class="s2">&quot;San Francisco&quot;</span> \
-    <span class="o">-</span><span class="n">d</span> <span class="n">state</span><span class="o">=</span><span class="s2">&quot;CA&quot;</span> \
-    <span class="o">-</span><span class="n">d</span> <span class="nb">zip</span><span class="o">=</span><span class="mi">94117</span> \
-    <span class="o">-</span><span class="n">d</span> <span class="n">country</span><span class="o">=</span><span class="s2">&quot;US&quot;</span> \
-    <span class="o">-</span><span class="n">d</span> <span class="n">phone</span><span class="o">=</span><span class="s2">&quot;+1 555 341 9393&quot;</span> \
-    <span class="o">-</span><span class="n">d</span> <span class="n">email</span><span class="o">=</span><span class="s2">&quot;shippotle@goshippo.com&quot;</span>\
-    <span class="o">-</span><span class="n">d</span> <span class="n">is_residential</span><span class="o">=</span><span class="kc">True</span>\
-    <span class="o">-</span><span class="n">d</span> <span class="n">metadata</span><span class="o">=</span><span class="s2">&quot;Customer ID 123456&quot;</span>
-</pre></div>
-</div>
-<p><strong>Example Response</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-   <span class="s2">&quot;is_complete&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-   <span class="s2">&quot;object_created&quot;</span><span class="p">:</span><span class="s2">&quot;2014-07-09T02:19:13.174Z&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;object_updated&quot;</span><span class="p">:</span><span class="s2">&quot;2014-07-09T02:19:13.174Z&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;object_id&quot;</span><span class="p">:</span><span class="s2">&quot;d799c2679e644279b59fe661ac8fa488&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;object_owner&quot;</span><span class="p">:</span><span class="s2">&quot;shippotle@goshippo.com&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;validation_results&quot;</span><span class="p">:</span> <span class="p">{},</span>
-   <span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Shawn Ippotle&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;company&quot;</span><span class="p">:</span><span class="s2">&quot;Shippo&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;street1&quot;</span><span class="p">:</span><span class="s2">&quot;215 Clayton St.&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;street2&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;city&quot;</span><span class="p">:</span><span class="s2">&quot;San Francisco&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;state&quot;</span><span class="p">:</span><span class="s2">&quot;CA&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;zip&quot;</span><span class="p">:</span><span class="s2">&quot;94117&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;country&quot;</span><span class="p">:</span><span class="s2">&quot;US&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;phone&quot;</span><span class="p">:</span><span class="s2">&quot;15553419393&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;email&quot;</span><span class="p">:</span><span class="s2">&quot;shippotle@goshippo.com&quot;</span><span class="p">,</span>
-   <span class="s2">&quot;is_residential&quot;</span><span class="p">:</span><span class="n">true</span><span class="p">,</span>
-   <span class="s2">&quot;metadata&quot;</span><span class="p">:</span><span class="s2">&quot;Customer ID 123456&quot;</span>
+<p><strong>Example</strong></p>
+<p>Blah blahi blah text text text.</p>
+<p>Blah blah blah blah text text.</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span></span><span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+<span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/json</span>
+
+<span class="p">{</span>
+  <span class="nt">&quot;creator&quot;</span><span class="p">:</span> <span class="s2">&quot;admin&quot;</span><span class="p">,</span> 
+  <span class="nt">&quot;locked&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+  <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;plone.locking.stealable&quot;</span><span class="p">,</span> 
+  <span class="nt">&quot;stealable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+  <span class="nt">&quot;time&quot;</span><span class="p">:</span> <span class="mf">1477076400.0</span><span class="p">,</span> 
+  <span class="nt">&quot;timeout&quot;</span><span class="p">:</span> <span class="mi">600</span><span class="p">,</span> 
+  <span class="nt">&quot;token&quot;</span><span class="p">:</span> <span class="s2">&quot;0.684672730996-0.25195226375-00105A989226:1477076400.000&quot;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -328,6 +316,8 @@
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Substitution Text.html" class="btn btn-neutral float-right" title="Substitution Text" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="Numbered Lists.html" class="btn btn-neutral" title="Numbered and Bulleted Lists" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
