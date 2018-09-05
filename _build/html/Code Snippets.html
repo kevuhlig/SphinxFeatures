@@ -254,6 +254,23 @@
 <p>The <code class="docutils literal notranslate"><span class="pre">Literalinclude</span></code> directive allows you to point to a file so that you don’t have a bunch of code filling up your .rst page. As with images and downloadable files, the target file is relative to the source document file.</p>
 <p><strong>Example</strong></p>
 <p>Blah blahi blah text text text.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">api</span><span class="o">.</span><span class="n">goshippo</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">addresses</span><span class="o">/</span> 
+    <span class="o">-</span><span class="n">H</span> <span class="s2">&quot;Authorization: ShippoToken &lt;API_TOKEN&gt;&quot;</span> \
+    <span class="o">-</span><span class="n">H</span> <span class="s2">&quot;Content-Type: application/json&quot;</span>
+    <span class="o">-</span><span class="n">d</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Shawn Ippotle&quot;</span> \
+    <span class="o">-</span><span class="n">d</span> <span class="n">company</span><span class="o">=</span><span class="s2">&quot;Shippo&quot;</span> \
+    <span class="o">-</span><span class="n">d</span> <span class="n">street1</span><span class="o">=</span><span class="s2">&quot;215 Clayton St.&quot;</span> \
+    <span class="o">-</span><span class="n">d</span> <span class="n">street2</span><span class="o">=</span><span class="s2">&quot;&quot;</span> \
+    <span class="o">-</span><span class="n">d</span> <span class="n">city</span><span class="o">=</span><span class="s2">&quot;San Francisco&quot;</span> \
+    <span class="o">-</span><span class="n">d</span> <span class="n">state</span><span class="o">=</span><span class="s2">&quot;CA&quot;</span> \
+    <span class="o">-</span><span class="n">d</span> <span class="nb">zip</span><span class="o">=</span><span class="mi">94117</span> \
+    <span class="o">-</span><span class="n">d</span> <span class="n">country</span><span class="o">=</span><span class="s2">&quot;US&quot;</span> \
+    <span class="o">-</span><span class="n">d</span> <span class="n">phone</span><span class="o">=</span><span class="s2">&quot;+1 555 341 9393&quot;</span> \
+    <span class="o">-</span><span class="n">d</span> <span class="n">email</span><span class="o">=</span><span class="s2">&quot;shippotle@goshippo.com&quot;</span>\
+    <span class="o">-</span><span class="n">d</span> <span class="n">is_residential</span><span class="o">=</span><span class="kc">True</span>\
+    <span class="o">-</span><span class="n">d</span> <span class="n">metadata</span><span class="o">=</span><span class="s2">&quot;Customer ID 123456&quot;</span>
+</pre></div>
+</div>
 <p>Blah blah blah blah text text.</p>
 <div class="highlight-http notranslate"><div class="highlight"><pre><span></span><span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
 <span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/json</span>

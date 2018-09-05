@@ -47,9 +47,3 @@ Welcome to Sphinx Features's documentation!
    Download
  
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
