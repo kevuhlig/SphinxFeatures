@@ -20,7 +20,9 @@ See https://www.pcfinancial.ca
 External Link to New Different Window
 -------------------------------------
 
-The following is an external link to a new window by using the "raw" directive, which is used to insert raw HTML into the HTML output. Apparently this is not recommended (http://docutils.sourceforge.net/docs/ref/rst/directives.html#raw-data-pass-through)
+The following is an external link to a new window by using the "raw" directive, which is used to insert raw HTML into the HTML output. Apparently this is `not recommended`_.
+
+.. _not recommended: http://docutils.sourceforge.net/docs/ref/rst/directives.html#raw-data-pass-through
 
 You can |green|.
 
@@ -32,4 +34,23 @@ You can |green|.
 Anonymous External Links
 ------------------------
 
-Example 1: heheheheh
+Example 1: `Click here`__ if you want to see the Scalar website.
+
+.. __: https://www.scalar.ca/en
+
+
+`RST`_ is the link to the reStructuredText site. 
+
+.. _RST: http://docutils.sourceforge.net/rst.html
+
+
+Example 2: See `the web site of my favorite programming language`__
+
+.. __: http://www.python.org
+
+
+Python is `my favourite programming language`__. This link is using intermediary. Check the source code. 
+
+.. _intermediary: http://www.python.org
+
+__ intermediary_
