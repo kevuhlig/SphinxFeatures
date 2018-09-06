@@ -6,7 +6,7 @@
 Welcome to Kevin Uhlig's Sphinx site!
 ===========================================
 
-This is Kevin Uhlig's sandbox site to document how to author content in Sphinx. Utilize the `Edit on GitHub`` link in top right corner of a page to see the Sphinx code. 
+This is Kevin Uhlig's sandbox site to document how to author content in Sphinx. Utilize the ``Edit on GitHub`` link in top right corner of a page to see its Sphinx code. 
 
 .. contents:: TOC to Sections Below (i.e., Local TOC)
    :local:
