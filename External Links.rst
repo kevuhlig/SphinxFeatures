@@ -49,7 +49,7 @@ Example 2: See `the web site of my favorite programming language`__
 .. __: http://www.python.org
 
 
-Python is `my favourite programming language`__. This link is using intermediary. Check the source code. 
+Python is `my favourite programming language`__. This link is using an intermediary. Check the source code. 
 
 .. _intermediary: http://www.python.org
 
